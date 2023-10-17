@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária</title>
+</head>
+<body>
+    <h1> Mc Feliz</h1>
+    <p> marcas: <span id="marca"></span> </p>
+    <p> modelo: <span id="modelo"></span></p>
+    <p> cor: <span id="cor"></span></p>
+    <p> first car <span id="first car"></span></p>
+    <p> second car <span ></span></p>
+    <p> third car <span ></span></p>
+
+    <script>
+        const marca = ["mazda","mitsubishi","ford","volkswagen"];
+        const modelo =["rx-7","lancer","f-250","golf"];
+        const cor = ["branco","vermelha","azul-turquesa","prata"];
+
+        document.getElementById('marca').innerHTML = marca;
+        document.getElementById('modelo').innerHTML = modelo;
+        document.getElementById('cor').innerHTML = cor;
+        document.getElementById('first car').innerHTML = marca[0 ] + "/" + modelo [0] + "/" + cor[0];
+
+    </script>
+
+</body>
+</html>
